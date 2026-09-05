@@ -66,12 +66,12 @@
       background:#141a26;border-bottom:1px solid var(--line-dark);
     }
     .nav-links.open a{padding:14px 40px;border-top:1px solid var(--line-dark-soft);}
-    .nav-toggle{display:block;}
-  }
-
-  /* ---------- HERO ---------- */
-  header.hero{
-    background:var(--dark-bg);
+   .stat-strip{margin-top:40px;background-color:var(--dark-bg);background-image:linear-gradient(var(--line-dark-soft) 1px, transparent 1px),linear-gradient(90deg, var(--line-dark-soft) 1px, transparent 1px);background-size:30px 30px;border:1px solid var(--line-dark);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));}
+.stat-strip>div{padding:16px 20px;border-right:1px solid var(--line-dark);}
+.stat-strip>div:last-child{border-right:none;}
+.stat-strip .k{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.05em;color:var(--accent);margin-bottom:6px;text-transform:uppercase;white-space:nowrap;}
+.stat-strip .v{font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:var(--text);}
+@media (max-width:640px){ .stat-strip{grid-template-columns:repeat(2,1fr);} .stat-strip>div:nth-child(2n){border-right:none;} }
     background-image:
       linear-gradient(var(--line-dark-soft) 1px, transparent 1px),
       linear-gradient(90deg, var(--line-dark-soft) 1px, transparent 1px);
