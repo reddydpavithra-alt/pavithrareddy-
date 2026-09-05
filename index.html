@@ -134,14 +134,18 @@
   }
   .title-block div:last-child{border-right:none;}
   .title-block .k{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.05em;color:var(--text-faint);margin-bottom:6px;}
-  .title-block .v{font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:var(--text);}
+  .title-block .v{font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:var(--text);white-space:nowrap;}
   @media (max-width:820px){
     .title-block{grid-template-columns:repeat(3,1fr);}
-    .title-block div:nth-child(3){border-right:none;}
+    .title-block div:nth-child(3n){border-right:none;}
+    .title-block div:nth-child(-n+3){border-bottom:1px solid var(--line-dark);}
+    .title-block .v{white-space:normal;}
   }
   @media (max-width:480px){
     .title-block{grid-template-columns:repeat(2,1fr);}
-    .title-block div:nth-child(2){border-right:none;}
+    .title-block div:nth-child(3n){border-right:1px solid var(--line-dark);}
+    .title-block div:nth-child(2n){border-right:none;}
+    .title-block div:nth-child(-n+4){border-bottom:1px solid var(--line-dark);}
   }
 
   /* ---------- SECTION SHELLS ---------- */
@@ -289,7 +293,7 @@
     <div class="kicker">FINAL-YEAR B.E. MECHANICAL ENGINEERING — VEMANA INSTITUTE OF TECHNOLOGY</div>
     <h1 class="name headline">Pavithra D.</h1>
     <p class="role">Industrial Robotics &amp; Automation — Manufacturing &amp; Production</p>
-    <p class="lede">I take mechanical designs from CAD sketch to machined, working parts — CNC toolpaths, generative structural studies, and embedded control systems that actually run. Looking for a hands-on robotics, automation, or manufacturing internship.</p>
+    <p class="lede">I take mechanical designs from CAD sketch to machined, working parts — CNC toolpaths, generative structural studies, and embedded control systems that actually run. Looking for a hands-on robotics, automation, or manufacturing internship. Available from December 2026.</p>
     <div class="hero-btns">
       <a class="btn solid" href="#projects">VIEW PROJECTS</a>
       <a class="btn" href="#contact">GET IN TOUCH</a>
